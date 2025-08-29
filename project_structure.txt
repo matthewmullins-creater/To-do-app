@@ -1,0 +1,651 @@
+├── ./
+│   ├── generate.py
+│   ├── README.md
+│   ├── .gitignore
+│   ├── db.sqlite3
+│   ├── vercel.json
+│   ├── requirements.txt
+│   ├── manage.py
+│   ├── project_structure.txt
+│   ├── todolist/
+│   │   ├── __init__.py
+│   │   ├── apps.py
+│   │   ├── forms.py
+│   │   ├── tests.py
+│   │   ├── views.py
+│   │   ├── models.py
+│   │   ├── urls.py
+│   │   ├── admin.py
+│   │   ├── static/
+│   │   │   ├── todolist/
+│   │   │   │   ├── styles.css
+│   │   │   │   ├── bs/
+│   │   │   │   │   ├── fonts/
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.woff2
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.woff
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   ├── js/
+│   │   │   │   │   │   ├── npm.js
+│   │   │   │   │   │   ├── bootstrap.min.js
+│   │   │   │   │   │   ├── bootstrap.js
+│   │   │   │   │   ├── css/
+│   │   │   │   │   │   ├── bootstrap.min.css
+│   │   │   │   │   │   ├── united.min.css
+│   │   │   │   │   │   ├── cerulean.min.css
+│   │   │   │   │   │   ├── bootstrap-theme.min.css
+│   │   │   │   │   │   ├── bootstrap.min.css.map
+│   │   │   │   │   │   ├── bootstrap-theme.css
+│   │   │   │   │   │   ├── bootstrap-theme.css.map
+│   │   │   │   │   │   ├── bootstrap.css.map
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── bootstrap-theme.min.css.map
+│   │   │   │   │   │   ├── flatly.min.css
+│   │   ├── templates/
+│   │   │   ├── todolist/
+│   │   │   │   ├── index.html
+│   │   ├── migrations/
+│   │   │   ├── 0002_rename_todolost_todolist.py
+│   │   │   ├── __init__.py
+│   │   │   ├── 0001_initial.py
+│   ├── staticfiles/
+│   │   ├── staticfiles.json
+│   │   ├── admin/
+│   │   │   ├── js/
+│   │   │   │   ├── autocomplete.js.gz
+│   │   │   │   ├── core.js.gz
+│   │   │   │   ├── change_form.9d8ca4f96b75.js.gz
+│   │   │   │   ├── nav_sidebar.3b9190d420b1.js
+│   │   │   │   ├── prepopulate_init.js
+│   │   │   │   ├── calendar.js
+│   │   │   │   ├── autocomplete.01591ab27be7.js.gz
+│   │   │   │   ├── prepopulate.js
+│   │   │   │   ├── nav_sidebar.3b9190d420b1.js.gz
+│   │   │   │   ├── popup_response.c6cc78ea5551.js
+│   │   │   │   ├── jquery.init.js
+│   │   │   │   ├── cancel.js.gz
+│   │   │   │   ├── filters.js
+│   │   │   │   ├── jquery.init.b7781a0897fc.js.gz
+│   │   │   │   ├── calendar.f8a5d055eb33.js
+│   │   │   │   ├── filters.0e360b7a9f80.js.gz
+│   │   │   │   ├── inlines.js.gz
+│   │   │   │   ├── SelectBox.js.gz
+│   │   │   │   ├── prepopulate_init.6cac7f3105b8.js
+│   │   │   │   ├── SelectFilter2.js
+│   │   │   │   ├── filters.0e360b7a9f80.js
+│   │   │   │   ├── core.cf103cd04ebf.js
+│   │   │   │   ├── actions.eac7e3441574.js
+│   │   │   │   ├── jquery.init.b7781a0897fc.js
+│   │   │   │   ├── SelectBox.7d3ce5a98007.js
+│   │   │   │   ├── calendar.f8a5d055eb33.js.gz
+│   │   │   │   ├── SelectFilter2.bdb8d0cc579e.js
+│   │   │   │   ├── change_form.9d8ca4f96b75.js
+│   │   │   │   ├── calendar.js.gz
+│   │   │   │   ├── urlify.js.gz
+│   │   │   │   ├── change_form.js
+│   │   │   │   ├── popup_response.js
+│   │   │   │   ├── core.js
+│   │   │   │   ├── urlify.js
+│   │   │   │   ├── theme.js
+│   │   │   │   ├── collapse.f84e7410290f.js.gz
+│   │   │   │   ├── urlify.ae970a820212.js.gz
+│   │   │   │   ├── cancel.ecc4c5ca7b32.js.gz
+│   │   │   │   ├── prepopulate.js.gz
+│   │   │   │   ├── theme.js.gz
+│   │   │   │   ├── SelectFilter2.bdb8d0cc579e.js.gz
+│   │   │   │   ├── cancel.ecc4c5ca7b32.js
+│   │   │   │   ├── popup_response.c6cc78ea5551.js.gz
+│   │   │   │   ├── autocomplete.01591ab27be7.js
+│   │   │   │   ├── collapse.f84e7410290f.js
+│   │   │   │   ├── SelectFilter2.js.gz
+│   │   │   │   ├── nav_sidebar.js
+│   │   │   │   ├── inlines.22d4d93c00b4.js.gz
+│   │   │   │   ├── popup_response.js.gz
+│   │   │   │   ├── SelectBox.js
+│   │   │   │   ├── core.cf103cd04ebf.js.gz
+│   │   │   │   ├── prepopulate_init.js.gz
+│   │   │   │   ├── filters.js.gz
+│   │   │   │   ├── actions.js
+│   │   │   │   ├── theme.ab270f56bb9c.js
+│   │   │   │   ├── prepopulate.bd2361dfd64d.js
+│   │   │   │   ├── prepopulate.bd2361dfd64d.js.gz
+│   │   │   │   ├── collapse.js
+│   │   │   │   ├── nav_sidebar.js.gz
+│   │   │   │   ├── jquery.init.js.gz
+│   │   │   │   ├── SelectBox.7d3ce5a98007.js.gz
+│   │   │   │   ├── autocomplete.js
+│   │   │   │   ├── inlines.js
+│   │   │   │   ├── cancel.js
+│   │   │   │   ├── actions.js.gz
+│   │   │   │   ├── inlines.22d4d93c00b4.js
+│   │   │   │   ├── theme.ab270f56bb9c.js.gz
+│   │   │   │   ├── collapse.js.gz
+│   │   │   │   ├── actions.eac7e3441574.js.gz
+│   │   │   │   ├── change_form.js.gz
+│   │   │   │   ├── urlify.ae970a820212.js
+│   │   │   │   ├── prepopulate_init.6cac7f3105b8.js.gz
+│   │   │   │   ├── admin/
+│   │   │   │   │   ├── RelatedObjectLookups.8609f99b9ab2.js.gz
+│   │   │   │   │   ├── RelatedObjectLookups.js
+│   │   │   │   │   ├── DateTimeShortcuts.js
+│   │   │   │   │   ├── RelatedObjectLookups.js.gz
+│   │   │   │   │   ├── DateTimeShortcuts.9f6e209cebca.js
+│   │   │   │   │   ├── RelatedObjectLookups.8609f99b9ab2.js
+│   │   │   │   │   ├── DateTimeShortcuts.js.gz
+│   │   │   │   │   ├── DateTimeShortcuts.9f6e209cebca.js.gz
+│   │   │   │   ├── vendor/
+│   │   │   │   │   ├── xregexp/
+│   │   │   │   │   │   ├── LICENSE.bf79e414957a.txt
+│   │   │   │   │   │   ├── xregexp.js
+│   │   │   │   │   │   ├── xregexp.min.b0439563a5d3.js.gz
+│   │   │   │   │   │   ├── LICENSE.txt
+│   │   │   │   │   │   ├── LICENSE.bf79e414957a.txt.gz
+│   │   │   │   │   │   ├── xregexp.min.js.gz
+│   │   │   │   │   │   ├── xregexp.efda034b9537.js.gz
+│   │   │   │   │   │   ├── xregexp.min.b0439563a5d3.js
+│   │   │   │   │   │   ├── xregexp.min.js
+│   │   │   │   │   │   ├── xregexp.efda034b9537.js
+│   │   │   │   │   │   ├── LICENSE.txt.gz
+│   │   │   │   │   │   ├── xregexp.js.gz
+│   │   │   │   │   ├── select2/
+│   │   │   │   │   │   ├── select2.full.min.js
+│   │   │   │   │   │   ├── select2.full.min.fcd7500d8e13.js
+│   │   │   │   │   │   ├── select2.full.min.js.gz
+│   │   │   │   │   │   ├── select2.full.min.fcd7500d8e13.js.gz
+│   │   │   │   │   │   ├── LICENSE.f94142512c91.md.gz
+│   │   │   │   │   │   ├── select2.full.js.gz
+│   │   │   │   │   │   ├── select2.full.c2afdeda3058.js
+│   │   │   │   │   │   ├── select2.full.c2afdeda3058.js.gz
+│   │   │   │   │   │   ├── LICENSE.md
+│   │   │   │   │   │   ├── LICENSE.md.gz
+│   │   │   │   │   │   ├── select2.full.js
+│   │   │   │   │   │   ├── LICENSE.f94142512c91.md
+│   │   │   │   │   │   ├── i18n/
+│   │   │   │   │   │   │   ├── bs.js
+│   │   │   │   │   │   │   ├── el.27097f071856.js.gz
+│   │   │   │   │   │   │   ├── sl.js.gz
+│   │   │   │   │   │   │   ├── dsb.56372c92d2f1.js.gz
+│   │   │   │   │   │   │   ├── eu.adfe5c97b72c.js
+│   │   │   │   │   │   │   ├── ar.65aa8e36bf5d.js.gz
+│   │   │   │   │   │   │   ├── ka.js.gz
+│   │   │   │   │   │   │   ├── hy.c7babaeef5a6.js.gz
+│   │   │   │   │   │   │   ├── nb.js.gz
+│   │   │   │   │   │   │   ├── hu.6ec6039cb8a3.js
+│   │   │   │   │   │   │   ├── id.04debded514d.js.gz
+│   │   │   │   │   │   │   ├── pt-BR.js
+│   │   │   │   │   │   │   ├── ro.js.gz
+│   │   │   │   │   │   │   ├── pl.js
+│   │   │   │   │   │   │   ├── nb.js
+│   │   │   │   │   │   │   ├── ps.js
+│   │   │   │   │   │   │   ├── pt-BR.e1b294433e7f.js.gz
+│   │   │   │   │   │   │   ├── pl.6031b4f16452.js.gz
+│   │   │   │   │   │   │   ├── ps.38dfa47af9e0.js.gz
+│   │   │   │   │   │   │   ├── lv.js
+│   │   │   │   │   │   │   ├── sq.js.gz
+│   │   │   │   │   │   │   ├── zh-TW.04554a227c2b.js
+│   │   │   │   │   │   │   ├── af.js
+│   │   │   │   │   │   │   ├── pt-BR.js.gz
+│   │   │   │   │   │   │   ├── zh-TW.04554a227c2b.js.gz
+│   │   │   │   │   │   │   ├── ar.js
+│   │   │   │   │   │   │   ├── hi.70640d41628f.js.gz
+│   │   │   │   │   │   │   ├── ko.e7be6c20e673.js.gz
+│   │   │   │   │   │   │   ├── bn.6d42b4dd5665.js
+│   │   │   │   │   │   │   ├── fr.05e0542fcfe6.js
+│   │   │   │   │   │   │   ├── sk.js
+│   │   │   │   │   │   │   ├── uk.js.gz
+│   │   │   │   │   │   │   ├── zh-TW.js
+│   │   │   │   │   │   │   ├── nl.997868a37ed8.js.gz
+│   │   │   │   │   │   │   ├── km.c23089cb06ca.js
+│   │   │   │   │   │   │   ├── es.js
+│   │   │   │   │   │   │   ├── he.e420ff6cd3ed.js.gz
+│   │   │   │   │   │   │   ├── sl.js
+│   │   │   │   │   │   │   ├── sv.js
+│   │   │   │   │   │   │   ├── hy.js
+│   │   │   │   │   │   │   ├── sk.33d02cef8d11.js
+│   │   │   │   │   │   │   ├── hu.js
+│   │   │   │   │   │   │   ├── tk.js
+│   │   │   │   │   │   │   ├── tk.js.gz
+│   │   │   │   │   │   │   ├── th.f38c20b0221b.js
+│   │   │   │   │   │   │   ├── km.js
+│   │   │   │   │   │   │   ├── az.270c257daf81.js.gz
+│   │   │   │   │   │   │   ├── it.be4fe8d365b5.js
+│   │   │   │   │   │   │   ├── de.js
+│   │   │   │   │   │   │   ├── en.js.gz
+│   │   │   │   │   │   │   ├── km.c23089cb06ca.js.gz
+│   │   │   │   │   │   │   ├── dsb.js
+│   │   │   │   │   │   │   ├── pt-BR.e1b294433e7f.js
+│   │   │   │   │   │   │   ├── bg.js.gz
+│   │   │   │   │   │   │   ├── en.cf932ba09a98.js
+│   │   │   │   │   │   │   ├── et.2b96fd98289d.js.gz
+│   │   │   │   │   │   │   ├── bn.js
+│   │   │   │   │   │   │   ├── nl.js.gz
+│   │   │   │   │   │   │   ├── el.27097f071856.js
+│   │   │   │   │   │   │   ├── pt.33b4a3b44d43.js.gz
+│   │   │   │   │   │   │   ├── gl.js
+│   │   │   │   │   │   │   ├── gl.js.gz
+│   │   │   │   │   │   │   ├── da.js
+│   │   │   │   │   │   │   ├── ar.js.gz
+│   │   │   │   │   │   │   ├── ja.170ae885d74f.js
+│   │   │   │   │   │   │   ├── sq.5636b60d29c9.js.gz
+│   │   │   │   │   │   │   ├── zh-CN.js.gz
+│   │   │   │   │   │   │   ├── ja.js
+│   │   │   │   │   │   │   ├── tr.js
+│   │   │   │   │   │   │   ├── en.js
+│   │   │   │   │   │   │   ├── el.js
+│   │   │   │   │   │   │   ├── ru.js.gz
+│   │   │   │   │   │   │   ├── hr.a2b092cc1147.js.gz
+│   │   │   │   │   │   │   ├── ne.3d79fd3f08db.js
+│   │   │   │   │   │   │   ├── id.js
+│   │   │   │   │   │   │   ├── bg.39b8be30d4f0.js
+│   │   │   │   │   │   │   ├── hsb.fa3b55265efe.js
+│   │   │   │   │   │   │   ├── hr.a2b092cc1147.js
+│   │   │   │   │   │   │   ├── hi.js
+│   │   │   │   │   │   │   ├── hy.js.gz
+│   │   │   │   │   │   │   ├── is.3ddd9a6a97e9.js
+│   │   │   │   │   │   │   ├── eu.js.gz
+│   │   │   │   │   │   │   ├── lt.js.gz
+│   │   │   │   │   │   │   ├── ka.js
+│   │   │   │   │   │   │   ├── tr.b5a0643d1545.js
+│   │   │   │   │   │   │   ├── uk.8cede7f4803c.js.gz
+│   │   │   │   │   │   │   ├── da.766346afe4dd.js.gz
+│   │   │   │   │   │   │   ├── pt.js.gz
+│   │   │   │   │   │   │   ├── th.js
+│   │   │   │   │   │   │   ├── ms.js.gz
+│   │   │   │   │   │   │   ├── fa.js.gz
+│   │   │   │   │   │   │   ├── et.js.gz
+│   │   │   │   │   │   │   ├── af.4f6fcd73488c.js.gz
+│   │   │   │   │   │   │   ├── hu.6ec6039cb8a3.js.gz
+│   │   │   │   │   │   │   ├── lv.js.gz
+│   │   │   │   │   │   │   ├── bs.91624382358e.js
+│   │   │   │   │   │   │   ├── ps.38dfa47af9e0.js
+│   │   │   │   │   │   │   ├── de.js.gz
+│   │   │   │   │   │   │   ├── hsb.js
+│   │   │   │   │   │   │   ├── zh-TW.js.gz
+│   │   │   │   │   │   │   ├── bn.js.gz
+│   │   │   │   │   │   │   ├── el.js.gz
+│   │   │   │   │   │   │   ├── th.f38c20b0221b.js.gz
+│   │   │   │   │   │   │   ├── sl.131a78bc0752.js
+│   │   │   │   │   │   │   ├── sv.7a9c2f71e777.js.gz
+│   │   │   │   │   │   │   ├── cs.js.gz
+│   │   │   │   │   │   │   ├── ko.e7be6c20e673.js
+│   │   │   │   │   │   │   ├── vi.js
+│   │   │   │   │   │   │   ├── hsb.js.gz
+│   │   │   │   │   │   │   ├── fi.614ec42aa9ba.js.gz
+│   │   │   │   │   │   │   ├── tk.7c572a68c78f.js.gz
+│   │   │   │   │   │   │   ├── km.js.gz
+│   │   │   │   │   │   │   ├── sr-Cyrl.js
+│   │   │   │   │   │   │   ├── ro.js
+│   │   │   │   │   │   │   ├── lt.23c7ce903300.js.gz
+│   │   │   │   │   │   │   ├── nb.da2fce143f27.js
+│   │   │   │   │   │   │   ├── uk.js
+│   │   │   │   │   │   │   ├── pl.js.gz
+│   │   │   │   │   │   │   ├── ca.a166b745933a.js
+│   │   │   │   │   │   │   ├── ps.js.gz
+│   │   │   │   │   │   │   ├── zh-CN.js
+│   │   │   │   │   │   │   ├── sl.131a78bc0752.js.gz
+│   │   │   │   │   │   │   ├── is.js.gz
+│   │   │   │   │   │   │   ├── ms.js
+│   │   │   │   │   │   │   ├── ka.2083264a54f0.js.gz
+│   │   │   │   │   │   │   ├── hi.70640d41628f.js
+│   │   │   │   │   │   │   ├── ja.js.gz
+│   │   │   │   │   │   │   ├── eu.adfe5c97b72c.js.gz
+│   │   │   │   │   │   │   ├── lt.23c7ce903300.js
+│   │   │   │   │   │   │   ├── sv.7a9c2f71e777.js
+│   │   │   │   │   │   │   ├── mk.dabbb9087130.js
+│   │   │   │   │   │   │   ├── zh-CN.2cff662ec5f9.js
+│   │   │   │   │   │   │   ├── nb.da2fce143f27.js.gz
+│   │   │   │   │   │   │   ├── sr.5ed85a48f483.js.gz
+│   │   │   │   │   │   │   ├── ne.3d79fd3f08db.js.gz
+│   │   │   │   │   │   │   ├── ka.2083264a54f0.js
+│   │   │   │   │   │   │   ├── sr-Cyrl.f254bb8c4c7c.js.gz
+│   │   │   │   │   │   │   ├── it.js
+│   │   │   │   │   │   │   ├── he.js.gz
+│   │   │   │   │   │   │   ├── de.8a1c222b0204.js
+│   │   │   │   │   │   │   ├── ca.js
+│   │   │   │   │   │   │   ├── es.66dbc2652fb1.js.gz
+│   │   │   │   │   │   │   ├── hr.js
+│   │   │   │   │   │   │   ├── sq.5636b60d29c9.js
+│   │   │   │   │   │   │   ├── tr.b5a0643d1545.js.gz
+│   │   │   │   │   │   │   ├── vi.097a5b75b3e1.js.gz
+│   │   │   │   │   │   │   ├── sk.33d02cef8d11.js.gz
+│   │   │   │   │   │   │   ├── id.04debded514d.js
+│   │   │   │   │   │   │   ├── he.e420ff6cd3ed.js
+│   │   │   │   │   │   │   ├── nl.997868a37ed8.js
+│   │   │   │   │   │   │   ├── ca.js.gz
+│   │   │   │   │   │   │   ├── vi.097a5b75b3e1.js
+│   │   │   │   │   │   │   ├── is.3ddd9a6a97e9.js.gz
+│   │   │   │   │   │   │   ├── sr.js
+│   │   │   │   │   │   │   ├── fi.js.gz
+│   │   │   │   │   │   │   ├── bs.js.gz
+│   │   │   │   │   │   │   ├── id.js.gz
+│   │   │   │   │   │   │   ├── dsb.js.gz
+│   │   │   │   │   │   │   ├── ne.js.gz
+│   │   │   │   │   │   │   ├── pl.6031b4f16452.js
+│   │   │   │   │   │   │   ├── gl.d99b1fedaa86.js
+│   │   │   │   │   │   │   ├── ro.f75cb460ec3b.js
+│   │   │   │   │   │   │   ├── lv.08e62128eac1.js
+│   │   │   │   │   │   │   ├── af.js.gz
+│   │   │   │   │   │   │   ├── sr.5ed85a48f483.js
+│   │   │   │   │   │   │   ├── es.js.gz
+│   │   │   │   │   │   │   ├── tr.js.gz
+│   │   │   │   │   │   │   ├── ne.js
+│   │   │   │   │   │   │   ├── hsb.fa3b55265efe.js.gz
+│   │   │   │   │   │   │   ├── lt.js
+│   │   │   │   │   │   │   ├── fa.3b5bd1961cfd.js.gz
+│   │   │   │   │   │   │   ├── bg.js
+│   │   │   │   │   │   │   ├── lv.08e62128eac1.js.gz
+│   │   │   │   │   │   │   ├── zh-CN.2cff662ec5f9.js.gz
+│   │   │   │   │   │   │   ├── ru.934aa95f5b5f.js.gz
+│   │   │   │   │   │   │   ├── bg.39b8be30d4f0.js.gz
+│   │   │   │   │   │   │   ├── fr.05e0542fcfe6.js.gz
+│   │   │   │   │   │   │   ├── fi.614ec42aa9ba.js
+│   │   │   │   │   │   │   ├── sr-Cyrl.js.gz
+│   │   │   │   │   │   │   ├── fr.js.gz
+│   │   │   │   │   │   │   ├── sq.js
+│   │   │   │   │   │   │   ├── is.js
+│   │   │   │   │   │   │   ├── dsb.56372c92d2f1.js
+│   │   │   │   │   │   │   ├── es.66dbc2652fb1.js
+│   │   │   │   │   │   │   ├── bn.6d42b4dd5665.js.gz
+│   │   │   │   │   │   │   ├── da.js.gz
+│   │   │   │   │   │   │   ├── it.be4fe8d365b5.js.gz
+│   │   │   │   │   │   │   ├── sv.js.gz
+│   │   │   │   │   │   │   ├── da.766346afe4dd.js
+│   │   │   │   │   │   │   ├── cs.js
+│   │   │   │   │   │   │   ├── sk.js.gz
+│   │   │   │   │   │   │   ├── eu.js
+│   │   │   │   │   │   │   ├── sr-Cyrl.f254bb8c4c7c.js
+│   │   │   │   │   │   │   ├── hy.c7babaeef5a6.js
+│   │   │   │   │   │   │   ├── ja.170ae885d74f.js.gz
+│   │   │   │   │   │   │   ├── hi.js.gz
+│   │   │   │   │   │   │   ├── ca.a166b745933a.js.gz
+│   │   │   │   │   │   │   ├── hu.js.gz
+│   │   │   │   │   │   │   ├── bs.91624382358e.js.gz
+│   │   │   │   │   │   │   ├── cs.4f43e8e7d33a.js.gz
+│   │   │   │   │   │   │   ├── fa.js
+│   │   │   │   │   │   │   ├── et.2b96fd98289d.js
+│   │   │   │   │   │   │   ├── he.js
+│   │   │   │   │   │   │   ├── mk.js
+│   │   │   │   │   │   │   ├── ro.f75cb460ec3b.js.gz
+│   │   │   │   │   │   │   ├── fr.js
+│   │   │   │   │   │   │   ├── pt.33b4a3b44d43.js
+│   │   │   │   │   │   │   ├── th.js.gz
+│   │   │   │   │   │   │   ├── de.8a1c222b0204.js.gz
+│   │   │   │   │   │   │   ├── hr.js.gz
+│   │   │   │   │   │   │   ├── en.cf932ba09a98.js.gz
+│   │   │   │   │   │   │   ├── ko.js
+│   │   │   │   │   │   │   ├── ko.js.gz
+│   │   │   │   │   │   │   ├── ar.65aa8e36bf5d.js
+│   │   │   │   │   │   │   ├── az.js
+│   │   │   │   │   │   │   ├── fa.3b5bd1961cfd.js
+│   │   │   │   │   │   │   ├── vi.js.gz
+│   │   │   │   │   │   │   ├── ru.js
+│   │   │   │   │   │   │   ├── ms.4ba82c9a51ce.js.gz
+│   │   │   │   │   │   │   ├── fi.js
+│   │   │   │   │   │   │   ├── nl.js
+│   │   │   │   │   │   │   ├── sr.js.gz
+│   │   │   │   │   │   │   ├── pt.js
+│   │   │   │   │   │   │   ├── ms.4ba82c9a51ce.js
+│   │   │   │   │   │   │   ├── az.270c257daf81.js
+│   │   │   │   │   │   │   ├── gl.d99b1fedaa86.js.gz
+│   │   │   │   │   │   │   ├── mk.dabbb9087130.js.gz
+│   │   │   │   │   │   │   ├── ru.934aa95f5b5f.js
+│   │   │   │   │   │   │   ├── az.js.gz
+│   │   │   │   │   │   │   ├── uk.8cede7f4803c.js
+│   │   │   │   │   │   │   ├── mk.js.gz
+│   │   │   │   │   │   │   ├── it.js.gz
+│   │   │   │   │   │   │   ├── et.js
+│   │   │   │   │   │   │   ├── tk.7c572a68c78f.js
+│   │   │   │   │   │   │   ├── af.4f6fcd73488c.js
+│   │   │   │   │   │   │   ├── cs.4f43e8e7d33a.js
+│   │   │   │   │   ├── jquery/
+│   │   │   │   │   │   ├── jquery.js.gz
+│   │   │   │   │   │   ├── jquery.min.js
+│   │   │   │   │   │   ├── jquery.min.641dd1437010.js
+│   │   │   │   │   │   ├── LICENSE.de877aa6d744.txt.gz
+│   │   │   │   │   │   ├── jquery.min.js.gz
+│   │   │   │   │   │   ├── jquery.js
+│   │   │   │   │   │   ├── jquery.0208b96062ba.js.gz
+│   │   │   │   │   │   ├── LICENSE.txt
+│   │   │   │   │   │   ├── jquery.min.641dd1437010.js.gz
+│   │   │   │   │   │   ├── jquery.0208b96062ba.js
+│   │   │   │   │   │   ├── LICENSE.de877aa6d744.txt
+│   │   │   │   │   │   ├── LICENSE.txt.gz
+│   │   │   ├── css/
+│   │   │   │   ├── autocomplete.css.gz
+│   │   │   │   ├── widgets.css.gz
+│   │   │   │   ├── nav_sidebar.css
+│   │   │   │   ├── widgets.ee33ab26c7c2.css.gz
+│   │   │   │   ├── widgets.ee33ab26c7c2.css
+│   │   │   │   ├── changelists.css.gz
+│   │   │   │   ├── dark_mode.css.gz
+│   │   │   │   ├── base.523eb49842a7.css.gz
+│   │   │   │   ├── rtl.css
+│   │   │   │   ├── responsive.css
+│   │   │   │   ├── nav_sidebar.269a1bd44627.css
+│   │   │   │   ├── autocomplete.css
+│   │   │   │   ├── responsive_rtl.css
+│   │   │   │   ├── changelists.9237a1ac391b.css
+│   │   │   │   ├── login.586129c60a93.css
+│   │   │   │   ├── forms.c14e1cb06392.css
+│   │   │   │   ├── responsive_rtl.css.gz
+│   │   │   │   ├── dark_mode.css
+│   │   │   │   ├── responsive.css.gz
+│   │   │   │   ├── dashboard.css.gz
+│   │   │   │   ├── changelists.css
+│   │   │   │   ├── login.css
+│   │   │   │   ├── changelists.9237a1ac391b.css.gz
+│   │   │   │   ├── forms.css
+│   │   │   │   ├── base.523eb49842a7.css
+│   │   │   │   ├── autocomplete.4a81fc4242d0.css
+│   │   │   │   ├── forms.css.gz
+│   │   │   │   ├── autocomplete.4a81fc4242d0.css.gz
+│   │   │   │   ├── responsive_rtl.7d1130848605.css.gz
+│   │   │   │   ├── responsive.f6533dab034d.css.gz
+│   │   │   │   ├── nav_sidebar.css.gz
+│   │   │   │   ├── dashboard.e90f2068217b.css.gz
+│   │   │   │   ├── rtl.512d4b53fc59.css
+│   │   │   │   ├── dark_mode.ef27a31af300.css.gz
+│   │   │   │   ├── nav_sidebar.269a1bd44627.css.gz
+│   │   │   │   ├── dashboard.e90f2068217b.css
+│   │   │   │   ├── login.css.gz
+│   │   │   │   ├── dark_mode.ef27a31af300.css
+│   │   │   │   ├── dashboard.css
+│   │   │   │   ├── forms.c14e1cb06392.css.gz
+│   │   │   │   ├── responsive.f6533dab034d.css
+│   │   │   │   ├── login.586129c60a93.css.gz
+│   │   │   │   ├── widgets.css
+│   │   │   │   ├── responsive_rtl.7d1130848605.css
+│   │   │   │   ├── base.css.gz
+│   │   │   │   ├── rtl.css.gz
+│   │   │   │   ├── rtl.512d4b53fc59.css.gz
+│   │   │   │   ├── base.css
+│   │   │   │   ├── vendor/
+│   │   │   │   │   ├── select2/
+│   │   │   │   │   │   ├── select2.min.9f54e6414f87.css
+│   │   │   │   │   │   ├── select2.a2194c262648.css
+│   │   │   │   │   │   ├── select2.min.9f54e6414f87.css.gz
+│   │   │   │   │   │   ├── select2.min.css
+│   │   │   │   │   │   ├── LICENSE-SELECT2.md
+│   │   │   │   │   │   ├── LICENSE-SELECT2.f94142512c91.md
+│   │   │   │   │   │   ├── select2.a2194c262648.css.gz
+│   │   │   │   │   │   ├── LICENSE-SELECT2.f94142512c91.md.gz
+│   │   │   │   │   │   ├── select2.css
+│   │   │   │   │   │   ├── select2.min.css.gz
+│   │   │   │   │   │   ├── LICENSE-SELECT2.md.gz
+│   │   │   │   │   │   ├── select2.css.gz
+│   │   │   ├── img/
+│   │   │   │   ├── README.a70711a38d87.txt.gz
+│   │   │   │   ├── icon-changelink.18d2fd706348.svg
+│   │   │   │   ├── tooltag-add.svg
+│   │   │   │   ├── README.txt
+│   │   │   │   ├── icon-changelink.svg.gz
+│   │   │   │   ├── icon-no.svg
+│   │   │   │   ├── inline-delete.svg.gz
+│   │   │   │   ├── icon-calendar.ac7aea671bea.svg
+│   │   │   │   ├── sorting-icons.svg.gz
+│   │   │   │   ├── icon-no.439e821418cd.svg
+│   │   │   │   ├── icon-yes.svg
+│   │   │   │   ├── icon-changelink.svg
+│   │   │   │   ├── icon-addlink.d519b3bab011.svg
+│   │   │   │   ├── tooltag-arrowright.svg.gz
+│   │   │   │   ├── icon-addlink.d519b3bab011.svg.gz
+│   │   │   │   ├── README.a70711a38d87.txt
+│   │   │   │   ├── selector-icons.svg
+│   │   │   │   ├── icon-deletelink.564ef9dc3854.svg.gz
+│   │   │   │   ├── icon-clock.e1d4dfac3f2b.svg.gz
+│   │   │   │   ├── tooltag-add.svg.gz
+│   │   │   │   ├── sorting-icons.svg
+│   │   │   │   ├── icon-unknown-alt.81536e128bb6.svg
+│   │   │   │   ├── icon-calendar.ac7aea671bea.svg.gz
+│   │   │   │   ├── icon-clock.svg.gz
+│   │   │   │   ├── icon-unknown-alt.81536e128bb6.svg.gz
+│   │   │   │   ├── search.7cf54ff789c6.svg
+│   │   │   │   ├── icon-viewlink.svg.gz
+│   │   │   │   ├── LICENSE.2c54f4e1ca1c
+│   │   │   │   ├── LICENSE.gz
+│   │   │   │   ├── search.7cf54ff789c6.svg.gz
+│   │   │   │   ├── icon-alert.034cc7d8a67f.svg.gz
+│   │   │   │   ├── tooltag-add.e59d620a9742.svg
+│   │   │   │   ├── icon-unknown.a18cb4398978.svg
+│   │   │   │   ├── selector-icons.svg.gz
+│   │   │   │   ├── calendar-icons.svg
+│   │   │   │   ├── calendar-icons.svg.gz
+│   │   │   │   ├── icon-deletelink.svg.gz
+│   │   │   │   ├── icon-changelink.18d2fd706348.svg.gz
+│   │   │   │   ├── tooltag-add.e59d620a9742.svg.gz
+│   │   │   │   ├── sorting-icons.3a097b59f104.svg
+│   │   │   │   ├── icon-yes.d2f9f035226a.svg
+│   │   │   │   ├── icon-unknown-alt.svg.gz
+│   │   │   │   ├── icon-deletelink.svg
+│   │   │   │   ├── icon-deletelink.564ef9dc3854.svg
+│   │   │   │   ├── inline-delete.svg
+│   │   │   │   ├── icon-addlink.svg
+│   │   │   │   ├── icon-alert.svg
+│   │   │   │   ├── calendar-icons.39b290681a8b.svg.gz
+│   │   │   │   ├── icon-clock.e1d4dfac3f2b.svg
+│   │   │   │   ├── inline-delete.fec1b761f254.svg.gz
+│   │   │   │   ├── icon-unknown.svg.gz
+│   │   │   │   ├── icon-no.439e821418cd.svg.gz
+│   │   │   │   ├── tooltag-arrowright.svg
+│   │   │   │   ├── calendar-icons.39b290681a8b.svg
+│   │   │   │   ├── LICENSE
+│   │   │   │   ├── LICENSE.2c54f4e1ca1c.gz
+│   │   │   │   ├── selector-icons.b4555096cea2.svg.gz
+│   │   │   │   ├── search.svg
+│   │   │   │   ├── icon-no.svg.gz
+│   │   │   │   ├── icon-viewlink.41eb31f7826e.svg.gz
+│   │   │   │   ├── icon-viewlink.41eb31f7826e.svg
+│   │   │   │   ├── selector-icons.b4555096cea2.svg
+│   │   │   │   ├── README.txt.gz
+│   │   │   │   ├── sorting-icons.3a097b59f104.svg.gz
+│   │   │   │   ├── icon-calendar.svg.gz
+│   │   │   │   ├── icon-alert.034cc7d8a67f.svg
+│   │   │   │   ├── icon-yes.svg.gz
+│   │   │   │   ├── icon-unknown-alt.svg
+│   │   │   │   ├── icon-addlink.svg.gz
+│   │   │   │   ├── tooltag-arrowright.bbfb788a849e.svg
+│   │   │   │   ├── icon-yes.d2f9f035226a.svg.gz
+│   │   │   │   ├── icon-alert.svg.gz
+│   │   │   │   ├── icon-unknown.a18cb4398978.svg.gz
+│   │   │   │   ├── icon-clock.svg
+│   │   │   │   ├── search.svg.gz
+│   │   │   │   ├── icon-calendar.svg
+│   │   │   │   ├── tooltag-arrowright.bbfb788a849e.svg.gz
+│   │   │   │   ├── icon-viewlink.svg
+│   │   │   │   ├── icon-unknown.svg
+│   │   │   │   ├── inline-delete.fec1b761f254.svg
+│   │   │   │   ├── gis/
+│   │   │   │   │   ├── move_vertex_off.svg.gz
+│   │   │   │   │   ├── move_vertex_on.0047eba25b67.svg.gz
+│   │   │   │   │   ├── move_vertex_on.svg.gz
+│   │   │   │   │   ├── move_vertex_on.0047eba25b67.svg
+│   │   │   │   │   ├── move_vertex_off.svg
+│   │   │   │   │   ├── move_vertex_off.7a23bf31ef8a.svg
+│   │   │   │   │   ├── move_vertex_on.svg
+│   │   │   │   │   ├── move_vertex_off.7a23bf31ef8a.svg.gz
+│   │   ├── todolist/
+│   │   │   ├── styles.css.gz
+│   │   │   ├── styles.css
+│   │   │   ├── styles.bd76425a851e.css
+│   │   │   ├── styles.bd76425a851e.css.gz
+│   │   │   ├── bs/
+│   │   │   │   ├── fonts/
+│   │   │   │   │   ├── glyphicons-halflings-regular.448c34a56d69.woff2
+│   │   │   │   │   ├── glyphicons-halflings-regular.fa2772327f55.woff
+│   │   │   │   │   ├── glyphicons-halflings-regular.woff2
+│   │   │   │   │   ├── glyphicons-halflings-regular.ttf.gz
+│   │   │   │   │   ├── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── glyphicons-halflings-regular.89889688147b.svg
+│   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   ├── glyphicons-halflings-regular.89889688147b.svg.gz
+│   │   │   │   │   ├── glyphicons-halflings-regular.e18bbf611f2a.ttf.gz
+│   │   │   │   │   ├── glyphicons-halflings-regular.svg.gz
+│   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   ├── glyphicons-halflings-regular.e18bbf611f2a.ttf
+│   │   │   │   │   ├── glyphicons-halflings-regular.f4769f9bdb74.eot
+│   │   │   │   ├── js/
+│   │   │   │   │   ├── npm.js
+│   │   │   │   │   ├── bootstrap.min.js
+│   │   │   │   │   ├── npm.js.gz
+│   │   │   │   │   ├── bootstrap.min.js.gz
+│   │   │   │   │   ├── npm.ccb7f3909e30.js
+│   │   │   │   │   ├── bootstrap.js
+│   │   │   │   │   ├── npm.ccb7f3909e30.js.gz
+│   │   │   │   │   ├── bootstrap.min.c5b5b2fa19bd.js.gz
+│   │   │   │   │   ├── bootstrap.ed69cf59ee48.js.gz
+│   │   │   │   │   ├── bootstrap.min.c5b5b2fa19bd.js
+│   │   │   │   │   ├── bootstrap.js.gz
+│   │   │   │   │   ├── bootstrap.ed69cf59ee48.js
+│   │   │   │   ├── css/
+│   │   │   │   │   ├── bootstrap.min.css.gz
+│   │   │   │   │   ├── cerulean.min.css.gz
+│   │   │   │   │   ├── bootstrap.css.63462f9b350f.map.gz
+│   │   │   │   │   ├── bootstrap-theme.css.df8f768631ff.map
+│   │   │   │   │   ├── bootstrap.min.css
+│   │   │   │   │   ├── united.min.css.gz
+│   │   │   │   │   ├── bootstrap.css.63462f9b350f.map
+│   │   │   │   │   ├── bootstrap-theme.4d35a8650b97.css
+│   │   │   │   │   ├── united.min.css
+│   │   │   │   │   ├── bootstrap.min.eddabf0b6b33.css
+│   │   │   │   │   ├── cerulean.min.css
+│   │   │   │   │   ├── bootstrap-theme.min.css
+│   │   │   │   │   ├── bootstrap-theme.min.css.gz
+│   │   │   │   │   ├── bootstrap-theme.css.df8f768631ff.map.gz
+│   │   │   │   │   ├── bootstrap-theme.4d35a8650b97.css.gz
+│   │   │   │   │   ├── bootstrap-theme.min.536b1edce558.css
+│   │   │   │   │   ├── bootstrap.fb555e0f1ee3.css
+│   │   │   │   │   ├── bootstrap-theme.min.css.8b83e7cb9575.map
+│   │   │   │   │   ├── united.min.d1ac1335c3b2.css
+│   │   │   │   │   ├── cerulean.min.644c1d696ec4.css
+│   │   │   │   │   ├── flatly.min.ec8337183dd3.css
+│   │   │   │   │   ├── cerulean.min.644c1d696ec4.css.gz
+│   │   │   │   │   ├── bootstrap.min.css.map
+│   │   │   │   │   ├── bootstrap-theme.css
+│   │   │   │   │   ├── bootstrap.min.css.a2e87599b1de.map.gz
+│   │   │   │   │   ├── bootstrap.fb555e0f1ee3.css.gz
+│   │   │   │   │   ├── bootstrap-theme.css.map
+│   │   │   │   │   ├── bootstrap-theme.css.map.gz
+│   │   │   │   │   ├── bootstrap.css.map
+│   │   │   │   │   ├── bootstrap.css.map.gz
+│   │   │   │   │   ├── bootstrap.min.css.a2e87599b1de.map
+│   │   │   │   │   ├── flatly.min.css.gz
+│   │   │   │   │   ├── bootstrap.min.css.map.gz
+│   │   │   │   │   ├── bootstrap.min.eddabf0b6b33.css.gz
+│   │   │   │   │   ├── united.min.d1ac1335c3b2.css.gz
+│   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   ├── bootstrap-theme.css.gz
+│   │   │   │   │   ├── bootstrap-theme.min.css.map
+│   │   │   │   │   ├── bootstrap-theme.min.css.8b83e7cb9575.map.gz
+│   │   │   │   │   ├── bootstrap-theme.min.536b1edce558.css.gz
+│   │   │   │   │   ├── bootstrap-theme.min.css.map.gz
+│   │   │   │   │   ├── bootstrap.css.gz
+│   │   │   │   │   ├── flatly.min.ec8337183dd3.css.gz
+│   │   │   │   │   ├── flatly.min.css
+│   ├── mylist/
+│   │   ├── asgi.py
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── wsgi.py
+│   │   ├── urls.py
