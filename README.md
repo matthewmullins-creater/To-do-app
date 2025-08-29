@@ -19,8 +19,8 @@ A simple **To-Do List** web application built using **Django**, where users can 
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/todolist.git
-cd todolist
+git clone https://github.com/matthewmullins-creater/To-do-app.git
+cd To-do-app
 ```
 
 ### 2️⃣ Create a Virtual Environment
@@ -45,16 +45,3 @@ python manage.py migrate
 python manage.py runserver
 ```
 <p>Visit http://127.0.0.1:8000/ in your browser. 🎉</p>
-
-### 📌 Contributing
-Pull requests are welcome! Feel free to fork this repo, create a new branch, and submit a PR. 😊
-
-### 📄 License
-This project is licensed under the MIT License.
-
-## Made with ❤️ by Rohan Goyal
-
-### **Steps to Use It**
-1. Replace `"your-username"` with your actual GitHub username.  
-2. Add a `requirements.txt` file if it doesn’t exist (`pip freeze > requirements.txt`).  
-3. Add project details where needed.  
